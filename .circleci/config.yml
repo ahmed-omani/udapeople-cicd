@@ -15,13 +15,13 @@ commands:
   install_ansible:
     description: Install Ansible v2
     steps:
-      -run:
-        name: Install Ansible v2
-        command: |
-          sudo apt update
-          sudo apt install software-properties-common
-          sudo add-apt-repository --yes --update ppa:ansible/ansible
-          sudo apt install ansible
+      - run:
+          name: Install Ansible v2
+          command: |
+            sudo apt update
+            sudo apt install software-properties-common
+            sudo add-apt-repository --yes --update ppa:ansible/ansible
+            sudo apt install ansible
 
   notify_on_failure:
     steps:
