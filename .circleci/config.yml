@@ -223,6 +223,7 @@ jobs:
       
     steps:
       - checkout
+      - install_awscli
       - install_ansible
       - add_ssh_keys:
           fingerprints: ["56:08:5c:7c:18:a4:3d:02:1c:4b:19:2b:03:ca:45:bd"]
